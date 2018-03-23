@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MLTrons</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'uploadfile/style.css' %}">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<!-- Header -->
+		<div class="container-fluid">
+		
+			<!--Logo -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="{% url 'uploadfile:index' %}">
+					MLTrons
+				</a>
+			</div>
+
+			<!-- Items -->
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="{% url 'uploadfile:index' %}">
+							<span class="glyphicon glyphicon-cd" aria-hidden="true"></span>&nbsp
+							Home
+						</a>
+					</li>
+					<li class="">
+						<a href="{% url 'uploadfile:index' %}">
+							<span class="glyphicon glyphicon-cd" aria-hidden="true"></span>&nbsp
+							DataStore
+						</a>
+					</li>
+					<li class="">
+						<a href="{% url 'uploadfile:index' %}">
+							<span class="glyphicon glyphicon-cd" aria-hidden="true"></span>&nbsp
+							Models
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	{% block body %}
+
+	{% endblock%}
+
+
+</body>
